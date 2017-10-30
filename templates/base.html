@@ -11,7 +11,19 @@
 <body>
 
     <div>
-        <a href='/logout'>log out</a>
+        <p style="text-align:left;">
+                <a href='/'>home</a> 
+                &nbsp
+                <a href='/blog'>all posts</a> 
+                &nbsp
+                <a href='/newpost'>new post</a> 
+
+        <span style="float:right;">
+                <a href='/login'>login</a> 
+                &nbsp
+                <a href='/logout'>logout</a>                
+        </span>
+        </p>
     </div>
 
     {% with messages = get_flashed_messages(with_categories=True) %}
